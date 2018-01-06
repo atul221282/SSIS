@@ -1,0 +1,362 @@
+AS ,AS,American Samoa,1,5
+AS ,AS,American Samoa,1,5
+SA ,AU,South Australia,9,66
+QLD,AU,Queensland,9,64
+VIC,AU,Victoria,9,77
+NSW,AU,New South Wales,9,50
+TAS,AU,Tasmania,9,71
+SA ,AU,South Australia,9,66
+QLD,AU,Queensland,9,64
+VIC,AU,Victoria,9,77
+NSW,AU,New South Wales,9,50
+TAS,AU,Tasmania,9,71
+MB ,CA,Manitoba,6,31
+NB ,CA,Brunswick,6,41
+SK ,CA,Saskatchewan,6,69
+AB ,CA,Alberta,6,1
+ON ,CA,Ontario,6,57
+NS ,CA,Nova Scotia,6,49
+NT ,CA,Northwest Territories,6,51
+QC ,CA,Quebec,6,63
+NF ,CA,Newfoundland,6,45
+YT ,CA,Yukon Territory,6,83
+LB ,CA,Labrador,6,29
+PE ,CA,Prince Edward Island,6,60
+BC ,CA,British Columbia,6,7
+MB ,CA,Manitoba,6,31
+NB ,CA,Brunswick,6,41
+SK ,CA,Saskatchewan,6,69
+AB ,CA,Alberta,6,1
+ON ,CA,Ontario,6,57
+NS ,CA,Nova Scotia,6,49
+NT ,CA,Northwest Territories,6,51
+QC ,CA,Quebec,6,63
+NF ,CA,Newfoundland,6,45
+YT ,CA,Yukon Territory,6,83
+LB ,CA,Labrador,6,29
+PE ,CA,Prince Edward Island,6,60
+BC ,CA,British Columbia,6,7
+HH ,DE,Hamburg,8,20
+SL ,DE,Saarland,8,70
+NW ,DE,Nordrhein-Westfalen,8,53
+HE ,DE,Hessen,8,19
+BB ,DE,Brandenburg,8,85
+SN ,DE,Saxony,8,86
+BY ,DE,Bayern,8,8
+HH ,DE,Hamburg,8,20
+SL ,DE,Saarland,8,70
+NW ,DE,Nordrhein-Westfalen,8,53
+HE ,DE,Hessen,8,19
+BB ,DE,Brandenburg,8,85
+SN ,DE,Saxony,8,86
+BY ,DE,Bayern,8,8
+FM ,FM,Micronesia,9,16
+FM ,FM,Micronesia,9,16
+46 ,FR,Lot,7,132
+25 ,FR,Toubs,7,111
+47 ,FR,Lot et Garonne,7,133
+24 ,FR,Dordogne,7,110
+21 ,FR,Côte d'Or,7,107
+23 ,FR,Creuse,7,109
+22 ,FR,Côtes-d'Armor,7,108
+20 ,FR,Corse,7,106
+49 ,FR,Maine et Loire,7,135
+50 ,FR,Manche,7,136
+48 ,FR,Lozère,7,134
+26 ,FR,Drôme,7,112
+44 ,FR,Loire Atlantique,7,130
+45 ,FR,Loiret,7,131
+33 ,FR,Gironde,7,119
+34 ,FR,Hérault,7,120
+35 ,FR,Ille et Vilaine,7,121
+36 ,FR,Indre,7,122
+37 ,FR,Indre et Loire,7,123
+30 ,FR,Gard,7,116
+38 ,FR,Isère,7,124
+29 ,FR,Finistère,7,115
+39 ,FR,Jura,7,125
+40 ,FR,Landes,7,126
+28 ,FR,Eure et Loir,7,114
+41 ,FR,Loir et Cher,7,127
+42 ,FR,Loire,7,128
+43 ,FR,Loire (Haute),7,129
+31 ,FR,Garonne (Haute),7,117
+27 ,FR,Eure,7,113
+32 ,FR,Gers,7,118
+56 ,FR,Morbihan,7,142
+52 ,FR,Marne (Haute),7,138
+76 ,FR,Seine Maritime,7,162
+77 ,FR,Seine et Marne,7,163
+78 ,FR,Yveline,7,164
+79 ,FR,Sèvres (Deux),7,165
+80 ,FR,Somme,7,166
+81 ,FR,Tarne,7,167
+82 ,FR,Tarne et Garonne,7,168
+83 ,FR,Var,7,169
+75 ,FR,Seine (Paris),7,161
+84 ,FR,Vaucluse,7,170
+86 ,FR,Vienne,7,172
+87 ,FR,Vienne (Haute),7,173
+88 ,FR,Vosges,7,174
+89 ,FR,Yonne,7,175
+90 ,FR,Belford (Territoire de),7,176
+91 ,FR,Essonne,7,177
+92 ,FR,Hauts de Seine,7,178
+93 ,FR,Seine Saint Denis,7,179
+85 ,FR,La Vendée,7,171
+74 ,FR,Savoie Haute,7,160
+73 ,FR,Savoie,7,159
+72 ,FR,Sarthe,7,158
+53 ,FR,Mayenne,7,139
+54 ,FR,Meurthe et Moselle,7,140
+55 ,FR,Meuse,7,141
+19 ,FR,Corrèze,7,105
+57 ,FR,Moselle,7,143
+58 ,FR,Nièvre,7,144
+59 ,FR,Nord,7,145
+60 ,FR,Oise,7,146
+61 ,FR,Orne,7,147
+62 ,FR,Pas de Calais,7,148
+63 ,FR,Puy de Dôme,7,149
+64 ,FR,Pyrénées Atlantiques,7,150
+65 ,FR,Pyrénées (Hautes),7,151
+66 ,FR,Pyrénées Orientales,7,152
+67 ,FR,Rhin (Bas),7,153
+68 ,FR,Rhin (Haut),7,154
+69 ,FR,Rhône,7,155
+70 ,FR,Saône (Haute),7,156
+71 ,FR,Saône et Loire,7,157
+51 ,FR,Marne,7,137
+18 ,FR,Cher,7,104
+05 ,FR,Alpes (Haute),7,91
+16 ,FR,Charente,7,102
+17 ,FR,Charente-Maritime,7,103
+FR ,FR,France,7,84
+01 ,FR,Ain,7,87
+02 ,FR,Aisne,7,88
+03 ,FR,Allier,7,89
+04 ,FR,Alpes-de-Haute Provence,7,90
+94 ,FR,Val de Marne,7,180
+06 ,FR,Alpes-Maritimes,7,92
+95 ,FR,Val d'Oise,7,181
+08 ,FR,Ardennes,7,94
+07 ,FR,Ardèche,7,93
+14 ,FR,Calvados,7,100
+13 ,FR,Bouches du Rhône,7,99
+15 ,FR,Cantal,7,101
+11 ,FR,Aude,7,97
+10 ,FR,Aube,7,96
+09 ,FR,Ariège,7,95
+12 ,FR,Aveyron,7,98
+46 ,FR,Lot,7,132
+25 ,FR,Toubs,7,111
+47 ,FR,Lot et Garonne,7,133
+24 ,FR,Dordogne,7,110
+21 ,FR,Côte d'Or,7,107
+23 ,FR,Creuse,7,109
+22 ,FR,Côtes-d'Armor,7,108
+20 ,FR,Corse,7,106
+49 ,FR,Maine et Loire,7,135
+50 ,FR,Manche,7,136
+48 ,FR,Lozère,7,134
+26 ,FR,Drôme,7,112
+44 ,FR,Loire Atlantique,7,130
+45 ,FR,Loiret,7,131
+33 ,FR,Gironde,7,119
+34 ,FR,Hérault,7,120
+35 ,FR,Ille et Vilaine,7,121
+36 ,FR,Indre,7,122
+37 ,FR,Indre et Loire,7,123
+30 ,FR,Gard,7,116
+38 ,FR,Isère,7,124
+29 ,FR,Finistère,7,115
+39 ,FR,Jura,7,125
+40 ,FR,Landes,7,126
+28 ,FR,Eure et Loir,7,114
+41 ,FR,Loir et Cher,7,127
+42 ,FR,Loire,7,128
+43 ,FR,Loire (Haute),7,129
+31 ,FR,Garonne (Haute),7,117
+27 ,FR,Eure,7,113
+32 ,FR,Gers,7,118
+56 ,FR,Morbihan,7,142
+52 ,FR,Marne (Haute),7,138
+76 ,FR,Seine Maritime,7,162
+77 ,FR,Seine et Marne,7,163
+78 ,FR,Yveline,7,164
+79 ,FR,Sèvres (Deux),7,165
+80 ,FR,Somme,7,166
+81 ,FR,Tarne,7,167
+82 ,FR,Tarne et Garonne,7,168
+83 ,FR,Var,7,169
+75 ,FR,Seine (Paris),7,161
+84 ,FR,Vaucluse,7,170
+86 ,FR,Vienne,7,172
+87 ,FR,Vienne (Haute),7,173
+88 ,FR,Vosges,7,174
+89 ,FR,Yonne,7,175
+90 ,FR,Belford (Territoire de),7,176
+91 ,FR,Essonne,7,177
+92 ,FR,Hauts de Seine,7,178
+93 ,FR,Seine Saint Denis,7,179
+85 ,FR,La Vendée,7,171
+74 ,FR,Savoie Haute,7,160
+73 ,FR,Savoie,7,159
+72 ,FR,Sarthe,7,158
+53 ,FR,Mayenne,7,139
+54 ,FR,Meurthe et Moselle,7,140
+55 ,FR,Meuse,7,141
+19 ,FR,Corrèze,7,105
+57 ,FR,Moselle,7,143
+58 ,FR,Nièvre,7,144
+59 ,FR,Nord,7,145
+60 ,FR,Oise,7,146
+61 ,FR,Orne,7,147
+62 ,FR,Pas de Calais,7,148
+63 ,FR,Puy de Dôme,7,149
+64 ,FR,Pyrénées Atlantiques,7,150
+65 ,FR,Pyrénées (Hautes),7,151
+66 ,FR,Pyrénées Orientales,7,152
+67 ,FR,Rhin (Bas),7,153
+68 ,FR,Rhin (Haut),7,154
+69 ,FR,Rhône,7,155
+70 ,FR,Saône (Haute),7,156
+71 ,FR,Saône et Loire,7,157
+51 ,FR,Marne,7,137
+18 ,FR,Cher,7,104
+05 ,FR,Alpes (Haute),7,91
+16 ,FR,Charente,7,102
+17 ,FR,Charente-Maritime,7,103
+FR ,FR,France,7,84
+01 ,FR,Ain,7,87
+02 ,FR,Aisne,7,88
+03 ,FR,Allier,7,89
+04 ,FR,Alpes-de-Haute Provence,7,90
+94 ,FR,Val de Marne,7,180
+06 ,FR,Alpes-Maritimes,7,92
+95 ,FR,Val d'Oise,7,181
+08 ,FR,Ardennes,7,94
+07 ,FR,Ardèche,7,93
+14 ,FR,Calvados,7,100
+13 ,FR,Bouches du Rhône,7,99
+15 ,FR,Cantal,7,101
+11 ,FR,Aude,7,97
+10 ,FR,Aube,7,96
+09 ,FR,Ariège,7,95
+12 ,FR,Aveyron,7,98
+ENG,GB,England,10,14
+ENG,GB,England,10,14
+MH ,MH,Marshall Islands,9,34
+MH ,MH,Marshall Islands,9,34
+MP ,MP,Northern Mariana Islands,9,38
+MP ,MP,Northern Mariana Islands,9,38
+PW ,PW,Palau,9,62
+PW ,PW,Palau,9,62
+IN ,US,Indiana,2,25
+KS ,US,Kansas,3,26
+MD ,US,Maryland,2,32
+LA ,US,Louisiana,3,28
+MA ,US,Massachusetts,2,30
+IL ,US,Illinois,3,24
+ME ,US,Maine,2,33
+MI ,US,Michigan,3,35
+KY ,US,Kentucky,5,27
+ID ,US,Idaho,1,23
+GA ,US,Georgia,5,17
+HI ,US,Hawaii,1,21
+AK ,US,Alaska,1,2
+AL ,US,Alabama,5,3
+AR ,US,Arkansas,3,4
+AZ ,US,Arizona,4,6
+CA ,US,California,4,9
+CO ,US,Colorado,3,10
+CT ,US,Connecticut,2,11
+DC ,US,District of Columbia,2,12
+DE ,US,Delaware,2,13
+FL ,US,Florida,5,15
+GU ,US,Guam,4,18
+IA ,US,Iowa,3,22
+MN ,US,Minnesota,3,36
+NC ,US,North Carolina,5,42
+MS ,US,Mississippi,5,39
+SD ,US,South Dakota,3,68
+TN ,US,Tennessee,5,72
+TX ,US,Texas,4,73
+UT ,US,Utah,1,74
+SC ,US,South Carolina,5,67
+VA ,US,Virginia,5,75
+WA ,US,Washington,1,79
+WI ,US,Wisconsin,3,80
+WV ,US,West Virginia,5,81
+WY ,US,Wyoming,1,82
+VT ,US,Vermont,2,78
+MO ,US,Missouri,3,37
+RI ,US,Rhode Island,2,65
+PA ,US,Pennsylvania,2,59
+MT ,US,Montana,1,40
+ND ,US,North Dakota,3,43
+NE ,US,Nebraska,3,44
+NH ,US,New Hampshire,2,46
+NJ ,US,New Jersey,2,47
+NM ,US,New Mexico,4,48
+NV ,US,Nevada,1,52
+NY ,US,New York,2,54
+OH ,US,Ohio,2,55
+OK ,US,Oklahoma,3,56
+OR ,US,Oregon,1,58
+PR ,US,Puerto Rico,5,61
+IN ,US,Indiana,2,25
+KS ,US,Kansas,3,26
+MD ,US,Maryland,2,32
+LA ,US,Louisiana,3,28
+MA ,US,Massachusetts,2,30
+IL ,US,Illinois,3,24
+ME ,US,Maine,2,33
+MI ,US,Michigan,3,35
+KY ,US,Kentucky,5,27
+ID ,US,Idaho,1,23
+GA ,US,Georgia,5,17
+HI ,US,Hawaii,1,21
+AK ,US,Alaska,1,2
+AL ,US,Alabama,5,3
+AR ,US,Arkansas,3,4
+AZ ,US,Arizona,4,6
+CA ,US,California,4,9
+CO ,US,Colorado,3,10
+CT ,US,Connecticut,2,11
+DC ,US,District of Columbia,2,12
+DE ,US,Delaware,2,13
+FL ,US,Florida,5,15
+GU ,US,Guam,4,18
+IA ,US,Iowa,3,22
+MN ,US,Minnesota,3,36
+NC ,US,North Carolina,5,42
+MS ,US,Mississippi,5,39
+SD ,US,South Dakota,3,68
+TN ,US,Tennessee,5,72
+TX ,US,Texas,4,73
+UT ,US,Utah,1,74
+SC ,US,South Carolina,5,67
+VA ,US,Virginia,5,75
+WA ,US,Washington,1,79
+WI ,US,Wisconsin,3,80
+WV ,US,West Virginia,5,81
+WY ,US,Wyoming,1,82
+VT ,US,Vermont,2,78
+MO ,US,Missouri,3,37
+RI ,US,Rhode Island,2,65
+PA ,US,Pennsylvania,2,59
+MT ,US,Montana,1,40
+ND ,US,North Dakota,3,43
+NE ,US,Nebraska,3,44
+NH ,US,New Hampshire,2,46
+NJ ,US,New Jersey,2,47
+NM ,US,New Mexico,4,48
+NV ,US,Nevada,1,52
+NY ,US,New York,2,54
+OH ,US,Ohio,2,55
+OK ,US,Oklahoma,3,56
+OR ,US,Oregon,1,58
+PR ,US,Puerto Rico,5,61
+VI ,VI,Virgin Islands,5,76
+VI ,VI,Virgin Islands,5,76
