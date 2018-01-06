@@ -11,8 +11,8 @@
   DTS:LocaleID="3081"
   DTS:ObjectName="02_CharacterMapDemo"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{0A6A4C0B-C3B8-414B-908F-302FBA597E16}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{12F371EC-670E-4A1B-8480-D00EB830D651}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -48,7 +48,7 @@
               DTS:DataType="2"
               DTS:TextQualified="True"
               DTS:ObjectName="DepartmentID"
-              DTS:DTSID="{440631D1-EF0F-4327-9DB7-EFAA19A66E78}"
+              DTS:DTSID="{890BC98C-9B65-4562-A965-1D6622DEEDC0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{5469E6BE-4F2E-4EB7-A173-68B5683A30D9}"
+              DTS:DTSID="{739FDE40-7EF2-4848-8122-F812CB11ABD1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GroupName"
-              DTS:DTSID="{6D46A606-2C90-4DF6-ACAA-617E5A709325}"
+              DTS:DTSID="{69B5038D-71E0-4CAB-9BB3-6DC4380737B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="ModifiedDate"
-              DTS:DTSID="{16F64970-2EAA-49BD-931B-9987F5D0AC4F}"
+              DTS:DTSID="{68A1897B-9AE1-4A0C-8F69-DB9CECE38897}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,16 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DepartmentName"
-              DTS:DTSID="{76E1B53E-CD78-44BF-8781-66969B44A2A4}"
+              DTS:DTSID="{20D1AAD1-5FEF-4D01-AD00-E705AD179A46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of Name"
+              DTS:DTSID="{A84EE4FA-030E-498B-8196-D5B90336854A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,8 +100,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="Copy of Name"
-              DTS:DTSID="{7799C826-1C09-4362-AFF5-296CEE026AA6}"
+              DTS:ObjectName="Copy of GroupName"
+              DTS:DTSID="{A9223980-7C90-417D-8B3B-82C80A04D280}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -203,6 +212,27 @@
                           name="InputColumnLineageID">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of GroupName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Map Column"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of GroupName]"
+                      name="Copy of GroupName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.UInt32"
+                          description="Specifies the string operations to apply."
+                          name="MapFlags"
+                          typeConverter="LCMappingType">67108864</property>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column to which operations apply."
+                          name="InputColumnLineageID">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[GroupName]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -301,6 +331,13 @@
                       cachedName="Copy of Name"
                       externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of Name]"
                       lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of GroupName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of GroupName"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of GroupName]"
+                      lineageId="Package\Data Flow Task\Character Map.Outputs[Character Map Output].Columns[Copy of GroupName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -332,6 +369,11 @@
                       dataType="wstr"
                       length="50"
                       name="Copy of Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of GroupName]"
+                      dataType="wstr"
+                      length="50"
+                      name="Copy of GroupName" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
