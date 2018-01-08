@@ -11,8 +11,8 @@
   DTS:LocaleID="3081"
   DTS:ObjectName="18_CacheTranformDemo"
   DTS:PackageType="5"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{7168A8D9-A1A5-4BDE-ACF9-8E83E7F8DF66}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{0DC55696-3F77-400E-9FE7-A2E2C9125416}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -64,7 +64,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F9CECCBD-A971-422E-A749-3F10D274C572}"
+      DTS:DTSID="{FFF8B87C-F6FA-43D2-A456-BC8FBE5FA98D}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -75,51 +75,8 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\AtulChaudhary\Documents\Visual Studio 2017\Projects\SSIS\Output\CacheConnectionOutput.csv">
+          DTS:ConnectionString="C:\Users\AtulChaudhary\Documents\Visual Studio 2017\Projects\SSIS\Output\CTOutput.csv">
           <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Rating"
-              DTS:DTSID="{9A55CD60-E518-48E2-A8CE-5C18E446136A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductID"
-              DTS:DTSID="{EC1218BC-DC13-4A4C-ACBF-B228B5FA1603}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Name"
-              DTS:DTSID="{EAF49C9B-33A8-4C60-8C53-7027333C816A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="EmailAddress"
-              DTS:DTSID="{0539490D-5C30-45FC-91A0-15EF56C00FA3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="25"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductNumber"
-              DTS:DTSID="{37694E60-DB98-4A5D-835C-62B8811ACCF2}"
-              DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
@@ -128,18 +85,109 @@
               DTS:DataScale="6"
               DTS:TextQualified="True"
               DTS:ObjectName="LineTotal"
-              DTS:DTSID="{5AE01087-689E-4431-96B4-72A8DD7CA687}"
+              DTS:DTSID="{A98F0623-C034-4B6B-B84D-59F4C8353101}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductID"
+              DTS:DTSID="{AA494CD6-B9A5-4EAC-BFA7-8CBE1C479F69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductNumber"
+              DTS:DTSID="{403E7256-6894-4ED1-9622-718E4519A227}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{67F5C42C-7FE4-48A8-8E91-67E036C98A15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ReviewerName"
-              DTS:DTSID="{89247314-93E8-4ACB-8237-C145AD2771C1}"
+              DTS:DTSID="{530D6F05-2205-4447-8E36-0EAAC9686A76}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{46893C0E-5ADB-4E3A-943E-5B558BA91C44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Rating"
+              DTS:DTSID="{7648A8C5-64D2-4228-942A-F978E3A7FF53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReviewDate"
+              DTS:DTSID="{FC339566-B276-4137-8362-2F335B9D3751}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Product Reviw Cache Connection]"
+      DTS:CreationName="CACHE"
+      DTS:DTSID="{894E8E25-2CD7-4AB9-9B6F-FB5E00529C85}"
+      DTS:ObjectName="Product Reviw Cache Connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager>
+          <DTS:CacheColumns>
+            <DTS:CacheColumn
+              DTS:DataType="3"
+              DTS:IndexPosition="1"
+              DTS:ObjectName="ProductID"
+              DTS:DTSID="{2F3E0441-BE21-485A-A547-A2B671BAC0CD}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="ReviewerName"
+              DTS:DTSID="{9194EEFE-AB13-425E-8380-DE5CFBFC7094}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="130"
+              DTS:Length="50"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{669AA334-146F-4A56-B774-E5DD572E61AA}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="3"
+              DTS:ObjectName="Rating"
+              DTS:DTSID="{0E414914-3586-47CC-86ED-676529CA7D20}"
+              DTS:CreationName="" />
+            <DTS:CacheColumn
+              DTS:DataType="135"
+              DTS:ObjectName="ReviewDate"
+              DTS:DTSID="{C8B2BA87-2CA1-40AB-806C-0682AF8A698C}"
+              DTS:CreationName="" />
+          </DTS:CacheColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -236,81 +284,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Derived Column 1"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column 1"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input].Columns[Comments]"
-                      cachedDataType="wstr"
-                      cachedLength="3850"
-                      cachedName="Comments"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Comments]"
-                      truncationRowDisposition="FailComponent"
-                      usageType="readWrite">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[REPLACE](#{Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Comments]},","," ")</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">REPLACE(Comments,","," ")</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Data Flow Task\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -342,80 +315,63 @@
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Rating]"
-                      cachedDataType="i4"
-                      cachedName="Rating"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Rating]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ProductID]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Name"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Name]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[EmailAddress]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="EmailAddress"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[EmailAddress]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[LineTotal]"
                       cachedDataType="numeric"
                       cachedName="LineTotal"
                       cachedPrecision="38"
                       cachedScale="6"
                       externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[LineTotal]" />
+                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[LineTotal]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewerName]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ReviewerName"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ReviewerName]" />
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
+                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]" />
                     <inputColumn
                       refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductNumber]"
                       cachedDataType="wstr"
                       cachedLength="25"
                       cachedName="ProductNumber"
                       externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ProductNumber]" />
+                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductNumber]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewerName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ReviewerName"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewerName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Rating]"
+                      cachedDataType="i4"
+                      cachedName="Rating"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Rating]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ReviewDate"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewDate]"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
-                      dataType="i4"
-                      name="Rating" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
-                      dataType="i4"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
-                      dataType="wstr"
-                      length="50"
-                      name="EmailAddress" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
-                      dataType="wstr"
-                      length="25"
-                      name="ProductNumber" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
                       dataType="numeric"
@@ -423,10 +379,37 @@
                       precision="38"
                       scale="6" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
+                      dataType="wstr"
+                      length="25"
+                      name="ProductNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
                       dataType="wstr"
                       length="50"
                       name="ReviewerName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
+                      dataType="i4"
+                      name="Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewDate]"
+                      dataType="dbTimeStamp"
+                      name="ReviewDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -467,7 +450,7 @@ where [refTable].[ProductID] = ?</property>
                   dataType="System.Int32"
                   description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
                   name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
+                  typeConverter="LookupNoMatchBehavior">1</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
@@ -535,7 +518,6 @@ where [refTable].[ProductID] = ?</property>
                 <output
                   refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
@@ -606,210 +588,202 @@ where [refTable].[ProductID] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Merge Join"
-              componentClassID="Microsoft.MergeJoin"
-              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
-              name="Merge Join"
-              version="1">
+              refId="Package\Data Flow Task\Lookup 1"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 1"
+              usesDispositions="true"
+              version="6">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="Specifies the type of join to perform."
-                  name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
+where [refTable].[ProductID] = ?</property>
                 <property
                   dataType="System.Int32"
-                  description="Specifies the number of columns in the ordering key."
-                  name="NumKeyColumns">1</property>
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ProductID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ReviewerName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmailAddress" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Rating" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ReviewDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
                 <property
                   dataType="System.Boolean"
-                  description="Indicates whether the null values are treated as equal values."
-                  name="TreatNullsAsEqual">true</property>
-                <property
-                  dataType="System.Int32"
-                  description="Indicates the requested maximum buffers per input before blocking."
-                  name="MaxBuffersPerInput">5</property>
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
               </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Lookup 1.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Product Reviw Cache Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[Product Reviw Cache Connection]"
+                  description="Connection manager used to access lookup data."
+                  name="CacheConnection" />
+              </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Left Input">
+                  refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
+                  name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[ProductID]"
+                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Name"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[Name]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[ProductNumber]"
-                      cachedDataType="wstr"
-                      cachedLength="25"
-                      cachedName="ProductNumber"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductNumber]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[LineTotal]"
-                      cachedDataType="numeric"
-                      cachedName="LineTotal"
-                      cachedPrecision="38"
-                      cachedScale="6"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[LineTotal]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Right Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[ProductID]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Rating]"
-                      cachedDataType="i4"
-                      cachedName="Rating"
-                      cachedSortKeyPosition="3"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[Rating]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[EmailAddress]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="EmailAddress"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[EmailAddress]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[ReviewerName]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ReviewerName"
-                      cachedSortKeyPosition="2"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[ReviewerName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Comments]"
-                      cachedDataType="wstr"
-                      cachedLength="3850"
-                      cachedName="Comments"
-                      cachedSortKeyPosition="4"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[Comments]" />
+                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">ProductID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output]"
-                  isSorted="true"
-                  name="Merge Join Output">
+                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Rating]"
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewerName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewerName]"
+                      name="ReviewerName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">ReviewerName</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmailAddress</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Rating]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Rating]"
-                      name="Rating">
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Rating]"
+                      name="Rating"
+                      truncationRowDisposition="FailComponent">
                       <properties>
                         <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Rating]}</property>
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Rating</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ProductID]"
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewDate]"
+                      name="ReviewDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">ReviewDate</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ProductID]"
-                      name="ProductID"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[ProductID]}</property>
-                      </properties>
-                    </outputColumn>
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Name]"
-                      name="Name">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Name]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[EmailAddress]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[EmailAddress]"
-                      name="EmailAddress">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[EmailAddress]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ProductNumber]"
-                      dataType="wstr"
-                      length="25"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ProductNumber]"
-                      name="ProductNumber">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[ProductNumber]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[LineTotal]"
-                      dataType="numeric"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[LineTotal]"
-                      name="LineTotal"
-                      precision="38"
-                      scale="6">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[LineTotal]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ReviewerName]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[ReviewerName]"
-                      name="ReviewerName">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[ReviewerName]}</property>
-                      </properties>
-                    </outputColumn>
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -983,205 +957,6 @@ where [refTable].[ProductID] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Product Review"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="Product Review"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Production].[ProductReview]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Product Review.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      name="ProductID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Rating]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[Rating]"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Rating]"
-                      name="Rating"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[EmailAddress]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[EmailAddress]"
-                      name="EmailAddress"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ReviewerName]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ReviewerName]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ReviewerName]"
-                      name="ReviewerName"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Comments]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[Comments]"
-                      length="3850"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Comments]"
-                      name="Comments"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ProductReviewID]"
-                      dataType="i4"
-                      name="ProductReviewID" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      dataType="i4"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ReviewerName]"
-                      dataType="wstr"
-                      length="50"
-                      name="ReviewerName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ReviewDate]"
-                      dataType="dbTimeStamp"
-                      name="ReviewDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
-                      dataType="wstr"
-                      length="50"
-                      name="EmailAddress" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[Rating]"
-                      dataType="i4"
-                      name="Rating" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[Comments]"
-                      dataType="wstr"
-                      length="3850"
-                      name="Comments" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      name="ModifiedDate" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      name="ProductID" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[Rating]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[Rating]"
-                      name="Rating" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
-                      name="EmailAddress" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ReviewerName]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[ReviewerName]"
-                      name="ReviewerName" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[Comments]"
-                      dataType="wstr"
-                      length="3850"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Error Output].Columns[Comments]"
-                      name="Comments" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Data Flow Task\sort product details"
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -1344,199 +1119,6 @@ where [refTable].[ProductID] = ?</property>
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Data Flow Task\sort product review"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="sort product review"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\sort product review.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\sort product review.Inputs[Sort Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\sort product review.Inputs[Sort Input].Columns[Rating]"
-                      cachedDataType="i4"
-                      cachedName="Rating"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Rating]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">3</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\sort product review.Inputs[Sort Input].Columns[EmailAddress]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="EmailAddress"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[EmailAddress]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\sort product review.Inputs[Sort Input].Columns[ReviewerName]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ReviewerName"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ReviewerName]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\sort product review.Inputs[Sort Input].Columns[Comments]"
-                      cachedDataType="wstr"
-                      cachedLength="3850"
-                      cachedName="Comments"
-                      lineageId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Comments]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">4</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\sort product review.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[ProductID]"
-                      name="ProductID"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ProductID]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[Rating]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[Rating]"
-                      name="Rating"
-                      sortKeyPosition="3">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Rating]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[EmailAddress]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[EmailAddress]"
-                      name="EmailAddress">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[EmailAddress]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[ReviewerName]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[ReviewerName]"
-                      name="ReviewerName"
-                      sortKeyPosition="2">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[ReviewerName]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[Comments]"
-                      dataType="wstr"
-                      length="3850"
-                      lineageId="Package\Data Flow Task\sort product review.Outputs[Sort Output].Columns[Comments]"
-                      name="Comments"
-                      sortKeyPosition="4">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output].Columns[Comments]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
@@ -1545,52 +1127,37 @@ where [refTable].[ProductID] = ?</property>
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
-              endId="Package\Data Flow Task\sort product review.Inputs[Sort Input]"
-              name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
-            <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Merge Join Output]"
+              refId="Package\Data Flow Task.Paths[Lookup Match Output1]"
               endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
-              name="Merge Join Output"
-              startId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output]" />
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
               endId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
               name="OLE DB Source Output"
               startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[OLE DB Source Output1]"
-              endId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
-              name="OLE DB Source Output"
-              startId="Package\Data Flow Task\Product Review.Outputs[OLE DB Source Output]" />
-            <path
               refId="Package\Data Flow Task.Paths[Sort Output]"
-              endId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input]"
+              endId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
               name="Sort Output"
               startId="Package\Data Flow Task\sort product details.Outputs[Sort Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Sort Output1]"
-              endId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Data Flow Task\sort product review.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Loading data into cash"
+      DTS:refId="Package\Load product review into cache"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{4F00E343-9374-4919-9F1E-78CF9B0C2203}"
+      DTS:DTSID="{F31BB890-EDBC-4ECB-9959-ECED68E5817E}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Loading data into cash"
+      DTS:ObjectName="Load product review into cache"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -1598,7 +1165,330 @@ where [refTable].[ProductID] = ?</property>
           version="1">
           <components>
             <component
-              refId="Package\Loading data into cash\Cache Transform"
+              refId="Package\Load product review into cache\Cache Transform"
+              componentClassID="Microsoft.Cache"
+              contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
+              name="Cache Transform">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load product review into cache\Cache Transform.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Product Reviw Cache Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[Product Reviw Cache Connection]"
+                  description="The connection used to access the cache."
+                  name="CacheConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input]"
+                  hasSideEffects="true"
+                  name="Cache Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">ProductID</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input].Columns[ReviewerName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ReviewerName"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReviewerName]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">ReviewerName</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">EmailAddress</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input].Columns[Rating]"
+                      cachedDataType="i4"
+                      cachedName="Rating"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rating]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">Rating</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input].Columns[ReviewDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ReviewDate"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReviewDate]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">ReviewDate</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load product review into cache\Cache Transform.Outputs[Cache Output]"
+                  name="Cache Output"
+                  synchronousInputId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load product review into cache\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Production].[ProductReview]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load product review into cache\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      name="ProductID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReviewerName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReviewerName]"
+                      length="50"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReviewerName]"
+                      name="ReviewerName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      length="50"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rating]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rating]"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rating]"
+                      name="Rating"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReviewDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReviewDate]"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReviewDate]"
+                      name="ReviewDate"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductReviewID]"
+                      dataType="i4"
+                      name="ProductReviewID" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReviewerName]"
+                      dataType="wstr"
+                      length="50"
+                      name="ReviewerName" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReviewDate]"
+                      dataType="dbTimeStamp"
+                      name="ReviewDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rating]"
+                      dataType="i4"
+                      name="Rating" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Comments]"
+                      dataType="wstr"
+                      length="3850"
+                      name="Comments" />
+                    <externalMetadataColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="ModifiedDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      dataType="i4"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      name="ProductID" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ReviewerName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ReviewerName]"
+                      name="ReviewerName" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      name="EmailAddress" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rating]"
+                      dataType="i4"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rating]"
+                      name="Rating" />
+                    <outputColumn
+                      refId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ReviewDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ReviewDate]"
+                      name="ReviewDate" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load product review into cache.Paths[OLE DB Source Output]"
+              endId="Package\Load product review into cache\Cache Transform.Inputs[Cache Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load product review into cache\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loading data into cache"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4F00E343-9374-4919-9F1E-78CF9B0C2203}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loading data into cache"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Loading data into cache\Cache Transform"
               componentClassID="Microsoft.Cache"
               contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
@@ -1612,7 +1502,7 @@ where [refTable].[ProductID] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Loading data into cash\Cache Transform.Connections[CacheConnection]"
+                  refId="Package\Loading data into cache\Cache Transform.Connections[CacheConnection]"
                   connectionManagerID="Package.ConnectionManagers[Cache Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager]"
                   description="The connection used to access the cache."
@@ -1620,15 +1510,15 @@ where [refTable].[ProductID] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input]"
+                  refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input]"
                   hasSideEffects="true"
                   name="Cache Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input].Columns[ProductID]"
+                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1637,11 +1527,11 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input].Columns[Name]"
+                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Name"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]">
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1650,11 +1540,11 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input].Columns[ProductNumber]"
+                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[ProductNumber]"
                       cachedDataType="wstr"
                       cachedLength="25"
                       cachedName="ProductNumber"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]">
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1663,10 +1553,10 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input].Columns[ListPrice]"
+                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[ListPrice]"
                       cachedDataType="cy"
                       cachedName="ListPrice"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]">
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -1680,15 +1570,15 @@ where [refTable].[ProductID] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Loading data into cash\Cache Transform.Outputs[Cache Output]"
+                  refId="Package\Loading data into cache\Cache Transform.Outputs[Cache Output]"
                   name="Cache Output"
-                  synchronousInputId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input]">
+                  synchronousInputId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
             <component
-              refId="Package\Loading data into cash\OLE DB Source"
+              refId="Package\Loading data into cache\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
@@ -1737,7 +1627,7 @@ where [refTable].[ProductID] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Loading data into cash\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\Loading data into cache\OLE DB Source.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1745,201 +1635,201 @@ where [refTable].[ProductID] = ?</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
                       name="ProductID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
                       length="50"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
+                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
                       length="25"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
                       name="ProductNumber"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
                       dataType="cy"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
+                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
                       name="ListPrice"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
                       dataType="i4"
                       name="ProductID" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
                       dataType="wstr"
                       length="50"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
                       dataType="wstr"
                       length="25"
                       name="ProductNumber" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MakeFlag]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MakeFlag]"
                       dataType="bool"
                       name="MakeFlag" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FinishedGoodsFlag]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FinishedGoodsFlag]"
                       dataType="bool"
                       name="FinishedGoodsFlag" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Color]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Color]"
                       dataType="wstr"
                       length="15"
                       name="Color" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SafetyStockLevel]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SafetyStockLevel]"
                       dataType="i2"
                       name="SafetyStockLevel" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReorderPoint]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReorderPoint]"
                       dataType="i2"
                       name="ReorderPoint" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StandardCost]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StandardCost]"
                       dataType="cy"
                       name="StandardCost" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
                       dataType="cy"
                       name="ListPrice" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Size]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Size]"
                       dataType="wstr"
                       length="5"
                       name="Size" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SizeUnitMeasureCode]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SizeUnitMeasureCode]"
                       dataType="wstr"
                       length="3"
                       name="SizeUnitMeasureCode" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[WeightUnitMeasureCode]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[WeightUnitMeasureCode]"
                       dataType="wstr"
                       length="3"
                       name="WeightUnitMeasureCode" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Weight]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Weight]"
                       dataType="numeric"
                       name="Weight"
                       precision="8"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DaysToManufacture]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DaysToManufacture]"
                       dataType="i4"
                       name="DaysToManufacture" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductLine]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductLine]"
                       dataType="wstr"
                       length="2"
                       name="ProductLine" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Class]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Class]"
                       dataType="wstr"
                       length="2"
                       name="Class" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Style]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Style]"
                       dataType="wstr"
                       length="2"
                       name="Style" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductSubcategoryID]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductSubcategoryID]"
                       dataType="i4"
                       name="ProductSubcategoryID" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductModelID]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductModelID]"
                       dataType="i4"
                       name="ProductModelID" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellStartDate]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellStartDate]"
                       dataType="dbTimeStamp"
                       name="SellStartDate" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellEndDate]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellEndDate]"
                       dataType="dbTimeStamp"
                       name="SellEndDate" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DiscontinuedDate]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DiscontinuedDate]"
                       dataType="dbTimeStamp"
                       name="DiscontinuedDate" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
                       dataType="guid"
                       name="rowguid" />
                     <externalMetadataColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
                       dataType="dbTimeStamp"
                       name="ModifiedDate" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
                       dataType="i4"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
                       name="ProductID" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
                       name="Name" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
                       dataType="wstr"
                       length="25"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
                       name="ProductNumber" />
                     <outputColumn
-                      refId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
+                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
                       dataType="cy"
-                      lineageId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
+                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
                       name="ListPrice" />
                   </outputColumns>
                   <externalMetadataColumns />
@@ -1949,10 +1839,10 @@ where [refTable].[ProductID] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Loading data into cash.Paths[OLE DB Source Output]"
-              endId="Package\Loading data into cash\Cache Transform.Inputs[Cache Input]"
+              refId="Package\Loading data into cache.Paths[OLE DB Source Output]"
+              endId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input]"
               name="OLE DB Source Output"
-              startId="Package\Loading data into cash\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1963,9 +1853,17 @@ where [refTable].[ProductID] = ?</property>
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{AEF8B2EF-5D39-45E0-B4ED-DE6FB2B92F4B}"
-      DTS:From="Package\Loading data into cash"
+      DTS:From="Package\Loading data into cache"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Flow Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{45D0645F-787F-4833-A0AE-B650108DB6A4}"
+      DTS:From="Package\Load product review into cache"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
       DTS:To="Package\Data Flow Task" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -1979,41 +1877,67 @@ where [refTable].[ProductID] = ?</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
+          Size="151,42"
           Id="Package\Data Flow Task"
           TopLeft="156.474364512065,219.487886517983" />
         <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\Loading data into cash"
+          Size="191,42"
+          Id="Package\Loading data into cache"
           TopLeft="129.961541926367,29.0393937060108" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="222.361541926367,70.6393937060108">
+          TopLeft="228.717953219216,71.0393937060108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.1538440809685,148.848492811972"
+              EndConnector="0,148.448492811972"
               Start="0,0"
-              End="-14.1538440809685,141.348492811972">
+              End="0,140.948492811972">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,84.373921910354" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,84.373921910354"
-                    Point2="0,88.373921910354"
-                    Point3="-4,88.373921910354" />
+                    End="0,140.948492811972" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Load product review into cache"
+          TopLeft="504.5,121.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="617.5,163.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-361.692302154602,55.987886517983"
+              Start="0,0"
+              End="-361.692302154602,48.487886517983">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-10.1538440809685,88.373921910354" />
+                    End="0,29.2405145381996" />
                   <mssgle:CubicBezierSegment
-                    Point1="-10.1538440809685,88.373921910354"
-                    Point2="-14.1538440809685,88.373921910354"
-                    Point3="-14.1538440809685,92.373921910354" />
+                    Point1="0,29.2405145381996"
+                    Point2="0,33.2405145381996"
+                    Point3="-4,33.2405145381996" />
                   <mssgle:LineSegment
-                    End="-14.1538440809685,141.348492811972" />
+                    End="-357.692302154602,33.2405145381996" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-357.692302154602,33.2405145381996"
+                    Point2="-361.692302154602,33.2405145381996"
+                    Point3="-361.692302154602,37.2405145381996" />
+                  <mssgle:LineSegment
+                    End="-361.692302154602,48.487886517983" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2029,15 +1953,23 @@ where [refTable].[ProductID] = ?</property>
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="149.6,41.6"
+          Size="150,42"
           Id="Package\Data Flow Task\OLE DB Source"
           TopLeft="26.3974366639493,5.5" />
         <NodeLayout
-          Size="112.8,41.6"
+          Size="170,42"
+          Id="Package\Data Flow Task\sort product details"
+          TopLeft="42.4230782774074,263.530312351397" />
+        <NodeLayout
+          Size="113,42"
           Id="Package\Data Flow Task\Lookup"
           TopLeft="40.499991380251,94.8131247859937" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="35.7563970610935,184.873729765068" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="99.0487140221001,47.1">
@@ -2060,10 +1992,6 @@ where [refTable].[ProductID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="35.7563970610935,184.873729765068" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output]"
           TopLeft="96.899991380251,136.413124785994">
@@ -2100,44 +2028,32 @@ where [refTable].[ProductID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Data Flow Task\Product Review"
-          TopLeft="224.346161873383,5.19696806044174" />
-        <NodeLayout
-          Size="169.6,41.6"
-          Id="Package\Data Flow Task\sort product details"
-          TopLeft="42.4230782774074,263.530312351397" />
-        <NodeLayout
-          Size="169.6,41.6"
-          Id="Package\Data Flow Task\sort product review"
-          TopLeft="299.730778922697,263.984856738642" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="112.556397061093,226.473729765068">
+          TopLeft="112.756397061094,226.873729765068">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.6666812163139,37.0565825863288"
+              EndConnector="14.6666812163139,36.656582586329"
               Start="0,0"
-              End="14.6666812163139,29.5565825863288">
+              End="14.6666812163139,29.156582586329">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.5282912931644" />
+                    End="0,14.3282912931645" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.5282912931644"
-                    Point2="0,18.5282912931644"
-                    Point3="4,18.5282912931644" />
+                    Point1="0,14.3282912931645"
+                    Point2="0,18.3282912931645"
+                    Point3="4,18.3282912931645" />
                   <mssgle:LineSegment
-                    End="10.6666812163139,18.5282912931644" />
+                    End="10.6666812163139,18.3282912931645" />
                   <mssgle:CubicBezierSegment
-                    Point1="10.6666812163139,18.5282912931644"
-                    Point2="14.6666812163139,18.5282912931644"
-                    Point3="14.6666812163139,22.5282912931644" />
+                    Point1="10.6666812163139,18.3282912931645"
+                    Point2="14.6666812163139,18.3282912931645"
+                    Point3="14.6666812163139,22.3282912931645" />
                   <mssgle:LineSegment
-                    End="14.6666812163139,29.5565825863288" />
+                    End="14.6666812163139,29.156582586329" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2147,69 +2063,35 @@ where [refTable].[ProductID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Task\Merge Join"
-          TopLeft="162.423082678981,343.106119762989" />
+          Size="122,42"
+          Id="Package\Data Flow Task\Lookup 1"
+          TopLeft="123.5,375.5" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="127.223078277407,305.130312351397">
+          TopLeft="127.423078277407,305.530312351397">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="100.000004401574,37.9758074115917"
+              EndConnector="57.0769217225926,69.969687648603"
               Start="0,0"
-              End="100.000004401574,30.4758074115917">
+              End="57.0769217225926,62.469687648603">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.9879037057958" />
+                    End="0,30.9848438243015" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.9879037057958"
-                    Point2="0,18.9879037057958"
-                    Point3="4,18.9879037057958" />
+                    Point1="0,30.9848438243015"
+                    Point2="0,34.9848438243015"
+                    Point3="4,34.9848438243015" />
                   <mssgle:LineSegment
-                    End="96.000004401574,18.9879037057958" />
+                    End="53.0769217225926,34.9848438243015" />
                   <mssgle:CubicBezierSegment
-                    Point1="96.000004401574,18.9879037057958"
-                    Point2="100.000004401574,18.9879037057958"
-                    Point3="100.000004401574,22.9879037057958" />
+                    Point1="53.0769217225926,34.9848438243015"
+                    Point2="57.0769217225926,34.9848438243015"
+                    Point3="57.0769217225926,38.9848438243015" />
                   <mssgle:LineSegment
-                    End="100.000004401574,30.4758074115917" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output1]"
-          TopLeft="384.530778922697,305.584856738642">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-137.041029577049,37.521263024347"
-              Start="0,0"
-              End="-137.041029577049,30.021263024347">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.2382119876008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.2382119876008"
-                    Point2="0,22.2382119876008"
-                    Point3="-4,22.2382119876008" />
-                  <mssgle:LineSegment
-                    End="-133.041029577049,22.2382119876008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-133.041029577049,22.2382119876008"
-                    Point2="-137.041029577049,22.2382119876008"
-                    Point3="-137.041029577049,26.2382119876008" />
-                  <mssgle:LineSegment
-                    End="-137.041029577049,30.021263024347" />
+                    End="57.0769217225926,62.469687648603" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2219,113 +2101,31 @@ where [refTable].[ProductID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="171.2,41.6"
+          Size="172,42"
           Id="Package\Data Flow Task\Flat File Destination"
-          TopLeft="159.346159489197,455.378804130222" />
+          TopLeft="102.5,525.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="227.223082678981,384.706119762989">
+          Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
+          TopLeft="186.5,417.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="17.723076810216,70.6726843672332"
+              EndConnector="0,108"
               Start="0,0"
-              End="17.723076810216,63.1726843672332">
+              End="0,100.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.3363421836166" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.3363421836166"
-                    Point2="0,35.3363421836166"
-                    Point3="4,35.3363421836166" />
-                  <mssgle:LineSegment
-                    End="13.723076810216,35.3363421836166" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.723076810216,35.3363421836166"
-                    Point2="17.723076810216,35.3363421836166"
-                    Point3="17.723076810216,39.3363421836166" />
-                  <mssgle:LineSegment
-                    End="17.723076810216,63.1726843672332" />
+                    End="0,100.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Data Flow Task\Derived Column 1"
-          TopLeft="242.807701012087,139.966670736641" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="299.946161873383,46.7969680604417">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="24.0615391387037,93.1697026761989"
-              Start="0,0"
-              End="24.0615391387037,85.6697026761989">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5848513380994" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,42.5848513380994"
-                    Point2="0,46.5848513380994"
-                    Point3="4,46.5848513380994" />
-                  <mssgle:LineSegment
-                    End="20.0615391387037,46.5848513380994" />
-                  <mssgle:CubicBezierSegment
-                    Point1="20.0615391387037,46.5848513380994"
-                    Point2="24.0615391387037,46.5848513380994"
-                    Point3="24.0615391387037,50.5848513380994" />
-                  <mssgle:LineSegment
-                    End="24.0615391387037,85.6697026761989" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
-          TopLeft="324.007701012087,181.566670736641">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="60.5230779106095,82.4181860020011"
-              Start="0,0"
-              End="60.5230779106095,74.9181860020011">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.2090930010005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.2090930010005"
-                    Point2="0,41.2090930010005"
-                    Point3="4,41.2090930010005" />
-                  <mssgle:LineSegment
-                    End="56.5230779106095,41.2090930010005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="56.5230779106095,41.2090930010005"
-                    Point2="60.5230779106095,41.2090930010005"
-                    Point3="60.5230779106095,45.2090930010005" />
-                  <mssgle:LineSegment
-                    End="60.5230779106095,74.9181860020011" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,44.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2344,21 +2144,31 @@ where [refTable].[ProductID] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Loading data into cash">
+    design-time-name="Package\Loading data into cache">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158.4,41.6"
-          Id="Package\Loading data into cash\Cache Transform"
+          Id="Package\Loading data into cache\Cache Transform"
           TopLeft="247.6,190.8" />
         <NodeLayout
           Size="149.6,41.6"
-          Id="Package\Loading data into cash\OLE DB Source"
+          Id="Package\Loading data into cache\OLE DB Source"
           TopLeft="246.7,50.3" />
         <EdgeLayout
-          Id="Package\Loading data into cash.Paths[OLE DB Source Output]"
+          Id="Package\Loading data into cache.Paths[OLE DB Source Output]"
           TopLeft="324.15,91.9">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2385,7 +2195,70 @@ where [refTable].[ProductID] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Loading data into cash\OLE DB Source">
+    design-time-name="Package\Loading data into cache\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load product review into cache">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load product review into cache\OLE DB Source"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Load product review into cache\Cache Transform"
+          TopLeft="31.5,147.5" />
+        <EdgeLayout
+          Id="Package\Load product review into cache.Paths[OLE DB Source Output]"
+          TopLeft="80.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.5,100"
+              Start="0,0"
+              End="30.5,92.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46"
+                    Point2="0,50"
+                    Point3="4,50" />
+                  <mssgle:LineSegment
+                    End="26.5,50" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.5,50"
+                    Point2="30.5,50"
+                    Point3="30.5,54" />
+                  <mssgle:LineSegment
+                    End="30.5,92.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load product review into cache\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2398,25 +2271,12 @@ where [refTable].[ProductID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup">
+    design-time-name="Package\Data Flow Task\Lookup 1">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
           type="q2:boolean">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Product Review">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

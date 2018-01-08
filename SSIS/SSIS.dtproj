@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-IAVQBJD</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtEptREEYHkWNkITxCFddKQAAAAACAAAAAAAQZgAAAAEAACAAAACHj09VnYx82TC5aIg7ZnccaHaEeimW4yMC26w6Wt3h2gAAAAAOgAAAAAIAACAAAAAAuCysC/WULAeLTCH9xn3F06XDS/WI2VpBsf5hPt94T5AAAAAN0Pv6gDYbhD64qH0AUZeNKVYpNZ7w+lsGpjSHForM+kkf5cnpAtAVG7xx+TZ99datjsacxjbIR56zji1BlNEBrTxYl3bFHk8g7lauEx+v+w4e0uKSMjj2dZEbA9WQvWWSi1kh3lLBewP3IIAjyZz804Bv5HJl7BMhmq0e2cDSNPIEbqYc+bhIVP2U3IHgwOBAAAAAr3RR/K+EVchlYDwDRNp+2OqqA0uxkIkjb/t24bk7a0QvmWiNYQXYzBY4ve9kY2Wgv0DgM6RrTEwq3i3qMQtHgw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtEptREEYHkWNkITxCFddKQAAAAACAAAAAAAQZgAAAAEAACAAAABa2kaQphipsseBIbxJIrlDpTuLne4u/kLBh+oRFxW5JgAAAAAOgAAAAAIAACAAAAAEtmYa3eGnKBy7/YzflZcjoaT1rbS8eyhNjwvrLV9/A5AAAAD/OiNIGUI8C/jwYO88Q0GZKFK90qFnqLDXJSn8RQ96D/kZZAq9iTgthjMR3vtxguRC6/ar884yDktQ9V4Ln9u1SMVukndYfsbi0JwA0ZusOKPfy5NFC1ruM2nJCjaKP/NNqBiFOQNXW4CBFPSu3cTHWbD6NRux4YWv+4SWOxnfGKqdyjUFwBA0oPTgG2df0BBAAAAA8cBEFsM3TtX3nj7OavzMgKQL802cDZIwv4dh0iNHTt+KxPm9hBdEr4zcUrjArML+HoeGU/k7RRTZYQZz9qWWKg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -5730,10 +5730,10 @@
                 <SSIS:Property SSIS:Name="Name">18_CacheTranformDemo</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">42</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">47</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{7168A8D9-A1A5-4BDE-ACF9-8E83E7F8DF66}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{96421779-AB30-41A1-B902-51BE06727CB1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -5945,7 +5945,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\AtulChaudhary\Documents\Visual Studio 2017\Projects\SSIS\Output\CacheConnectionOutput.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\AtulChaudhary\Documents\Visual Studio 2017\Projects\SSIS\Output\CTOutput.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -6055,6 +6055,67 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.Unicode">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.Product Reviw Cache Connection.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.Product Reviw Cache Connection.RetainData">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.Product Reviw Cache Connection.UseEncryption">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.Product Reviw Cache Connection.UseFile">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
