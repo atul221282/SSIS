@@ -11,8 +11,8 @@
   DTS:LocaleID="3081"
   DTS:ObjectName="18_CacheTranformDemo"
   DTS:PackageType="5"
-  DTS:VersionBuild="48"
-  DTS:VersionGUID="{0DC55696-3F77-400E-9FE7-A2E2C9125416}">
+  DTS:VersionBuild="50"
+  DTS:VersionGUID="{582B1454-84F3-4858-9EDC-2005083505C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -195,13 +195,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Data flow task to join Product, SalesOrder and Product Review record"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{A5A30BE7-A672-413E-880F-D4FD79F54A17}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Data flow task to join Product, SalesOrder and Product Review record"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -209,82 +209,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Derived Column"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Name"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Name]"
-                      truncationRowDisposition="FailComponent"
-                      usageType="readWrite">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[REPLACE](#{Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Name]},","," ")</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">REPLACE(Name,","," ")</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Flat File Destination"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination"
               componentClassID="Microsoft.FlatFileDestination"
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Flat File Destination"
@@ -303,111 +228,111 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[LineTotal]"
                       cachedDataType="numeric"
                       cachedName="LineTotal"
                       cachedPrecision="38"
                       cachedScale="6"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[LineTotal]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[LineTotal]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
                       cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductID]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductNumber]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductNumber]"
                       cachedDataType="wstr"
                       cachedLength="25"
                       cachedName="ProductNumber"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductNumber]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductNumber]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Name]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Name"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[Name]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewerName]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewerName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ReviewerName"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewerName]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[ReviewerName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[EmailAddress]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[EmailAddress]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="EmailAddress"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[EmailAddress]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[EmailAddress]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Rating]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[Rating]"
                       cachedDataType="i4"
                       cachedName="Rating"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Rating]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[Rating]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewDate]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].Columns[ReviewDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="ReviewDate"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewDate]"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewDate]" />
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewDate]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[ReviewDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LineTotal]"
                       dataType="numeric"
                       name="LineTotal"
                       precision="38"
                       scale="6" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductID]"
                       dataType="i4"
                       name="ProductID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductNumber]"
                       dataType="wstr"
                       length="25"
                       name="ProductNumber" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Name]"
                       dataType="wstr"
                       length="50"
                       name="Name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewerName]"
                       dataType="wstr"
                       length="50"
                       name="ReviewerName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
                       dataType="wstr"
                       length="50"
                       name="EmailAddress" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating]"
                       dataType="i4"
                       name="Rating" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewDate]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ReviewDate]"
                       dataType="dbTimeStamp"
                       name="ReviewDate" />
                   </externalMetadataColumns>
@@ -415,184 +340,11 @@
               </inputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Lookup"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
-where [refTable].[ProductID] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ProductID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Name" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProductNumber" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ListPrice" dataType="DT_CY" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Lookup.Connections[CacheConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Cache Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager]"
-                  description="Connection manager used to access lookup data."
-                  name="CacheConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">ProductID</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ProductNumber]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Copy Column"
-                      length="25"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ProductNumber]"
-                      name="ProductNumber"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">ProductNumber</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Copy Column"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">Name</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Lookup 1"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup 1"
+              name="Lookup product review"
               usesDispositions="true"
               version="6">
               <properties>
@@ -644,7 +396,7 @@ where [refTable].[ProductID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]};</property>
+                  name="ParameterMap">#{Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -656,7 +408,7 @@ where [refTable].[ProductID] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Lookup 1.Connections[CacheConnection]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Connections[CacheConnection]"
                   connectionManagerID="Package.ConnectionManagers[Product Reviw Cache Connection]"
                   connectionManagerRefId="Package.ConnectionManagers[Product Reviw Cache Connection]"
                   description="Connection manager used to access lookup data."
@@ -664,15 +416,15 @@ where [refTable].[ProductID] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Inputs[Lookup Input].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]">
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductID]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -690,18 +442,18 @@ where [refTable].[ProductID] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewerName]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[ReviewerName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Copy Column"
                       length="50"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewerName]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[ReviewerName]"
                       name="ReviewerName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -712,11 +464,11 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[EmailAddress]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[EmailAddress]"
                       dataType="wstr"
                       errorOrTruncationOperation="Copy Column"
                       length="50"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[EmailAddress]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[EmailAddress]"
                       name="EmailAddress"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -727,10 +479,10 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Rating]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[Rating]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Rating]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[Rating]"
                       name="Rating"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -741,10 +493,10 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewDate]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[ReviewDate]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[ReviewDate]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output].Columns[ReviewDate]"
                       name="ReviewDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -758,30 +510,30 @@ where [refTable].[ProductID] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup No Match Output]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -790,11 +542,259 @@ where [refTable].[ProductID] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Source"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup sales order details"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from () [refTable]
+where [refTable].[ProductID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ProductID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Name" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProductNumber" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ListPrice" dataType="DT_CY" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[ProductID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Cache Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager]"
+                  description="Connection manager used to access lookup data."
+                  name="CacheConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Inputs[Lookup Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[ProductID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">ProductID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[ProductNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="25"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[ProductNumber]"
+                      name="ProductNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">ProductNumber</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Name</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Replace comma from Name proeprty"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Inputs[Derived Column Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[Name]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE](#{Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[Name]},","," ")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE(Name,","," ")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="OLE DB Source"
+              name="Sales Order Details Source"
               usesDispositions="true"
               version="7">
               <properties>
@@ -839,7 +839,7 @@ where [refTable].[ProductID] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
                   description="The OLE DB runtime connection used to access the database."
@@ -847,109 +847,109 @@ where [refTable].[ProductID] = ?</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[LineTotal]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LineTotal]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineTotal]"
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[LineTotal]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[LineTotal]"
                       name="LineTotal"
                       precision="38"
                       scale="6"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[ProductID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      externalMetadataColumnId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[ProductID]"
                       name="ProductID"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesOrderID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[SalesOrderID]"
                       dataType="i4"
                       name="SalesOrderID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SalesOrderDetailID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[SalesOrderDetailID]"
                       dataType="i4"
                       name="SalesOrderDetailID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CarrierTrackingNumber]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[CarrierTrackingNumber]"
                       dataType="wstr"
                       length="25"
                       name="CarrierTrackingNumber" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[OrderQty]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[OrderQty]"
                       dataType="i2"
                       name="OrderQty" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
                       dataType="i4"
                       name="ProductID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SpecialOfferID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[SpecialOfferID]"
                       dataType="i4"
                       name="SpecialOfferID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
                       dataType="cy"
                       name="UnitPrice" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[UnitPriceDiscount]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[UnitPriceDiscount]"
                       dataType="cy"
                       name="UnitPriceDiscount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[LineTotal]"
                       dataType="numeric"
                       name="LineTotal"
                       precision="38"
                       scale="6" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
                       dataType="guid"
                       name="rowguid" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
                       dataType="dbTimeStamp"
                       name="ModifiedDate" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[LineTotal]"
                       dataType="numeric"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LineTotal]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[LineTotal]"
                       name="LineTotal"
                       precision="38"
                       scale="6" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
                       name="ProductID" />
                   </outputColumns>
                   <externalMetadataColumns />
@@ -957,11 +957,11 @@ where [refTable].[ProductID] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\sort product details"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID"
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="sort product details"
+              name="sorty by ProductID"
               version="1">
               <properties>
                 <property
@@ -976,16 +976,16 @@ where [refTable].[ProductID] = ?</property>
               </properties>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\sort product details.Inputs[Sort Input]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Inputs[Sort Input]"
                   name="Sort Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\sort product details.Inputs[Sort Input].Columns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Inputs[Sort Input].Columns[LineTotal]"
                       cachedDataType="numeric"
                       cachedName="LineTotal"
                       cachedPrecision="38"
                       cachedScale="6"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineTotal]">
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[LineTotal]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -998,10 +998,10 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\sort product details.Inputs[Sort Input].Columns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Inputs[Sort Input].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[ProductID]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1014,11 +1014,11 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\sort product details.Inputs[Sort Input].Columns[ProductNumber]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Inputs[Sort Input].Columns[ProductNumber]"
                       cachedDataType="wstr"
                       cachedLength="25"
                       cachedName="ProductNumber"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ProductNumber]">
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[ProductNumber]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1031,11 +1031,11 @@ where [refTable].[ProductID] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\sort product details.Inputs[Sort Input].Columns[Name]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Inputs[Sort Input].Columns[Name]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Name"
-                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Name]">
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[Name]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1053,14 +1053,14 @@ where [refTable].[ProductID] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\sort product details.Outputs[Sort Output]"
+                  refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output]"
                   isSorted="true"
                   name="Sort Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[LineTotal]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[LineTotal]"
                       dataType="numeric"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[LineTotal]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[LineTotal]"
                       name="LineTotal"
                       precision="38"
                       scale="6">
@@ -1069,13 +1069,13 @@ where [refTable].[ProductID] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LineTotal]}</property>
+                          name="SortColumnId">#{Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[LineTotal]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductID]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductID]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductID]"
                       name="ProductID"
                       sortKeyPosition="1">
                       <properties>
@@ -1083,35 +1083,35 @@ where [refTable].[ProductID] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]}</property>
+                          name="SortColumnId">#{Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output].Columns[ProductID]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductNumber]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductNumber]"
                       dataType="wstr"
                       length="25"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[ProductNumber]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[ProductNumber]"
                       name="ProductNumber">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[ProductNumber]}</property>
+                          name="SortColumnId">#{Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[ProductNumber]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[Name]"
+                      refId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[Name]"
                       dataType="wstr"
                       length="50"
-                      lineageId="Package\Data Flow Task\sort product details.Outputs[Sort Output].Columns[Name]"
+                      lineageId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output].Columns[Name]"
                       name="Name">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Name]}</property>
+                          name="SortColumnId">#{Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output].Columns[Name]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -1122,30 +1122,404 @@ where [refTable].[ProductID] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\sort product details.Inputs[Sort Input]"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Derived Column Output]"
+              endId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Inputs[Sort Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+              startId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
-              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Lookup Match Output]"
+              endId="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty.Inputs[Derived Column Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]" />
+              startId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output1]"
-              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Lookup Match Output1]"
+              endId="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination.Inputs[Flat File Destination Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]" />
+              startId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
-              endId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[OLE DB Source Output]"
+              endId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details.Inputs[Lookup Input]"
               name="OLE DB Source Output"
-              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Sort Output]"
-              endId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
+              refId="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Sort Output]"
+              endId="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review.Inputs[Lookup Input]"
               name="Sort Output"
-              startId="Package\Data Flow Task\sort product details.Outputs[Sort Output]" />
+              startId="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load product data into cache"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4F00E343-9374-4919-9F1E-78CF9B0C2203}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load product data into cache"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load product data into cache\Cache Transform"
+              componentClassID="Microsoft.Cache"
+              contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
+              name="Cache Transform"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load product data into cache\Cache Transform.Connections[CacheConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Cache Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager]"
+                  description="The connection used to access the cache."
+                  name="CacheConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input]"
+                  hasSideEffects="true"
+                  name="Cache Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input].Columns[ProductID]"
+                      cachedDataType="i4"
+                      cachedName="ProductID"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">ProductID</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Name"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">Name</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input].Columns[ProductNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="ProductNumber"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">ProductNumber</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input].Columns[ListPrice]"
+                      cachedDataType="cy"
+                      cachedName="ListPrice"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="The cache column associated with the input column."
+                          name="CacheColumnName">ListPrice</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load product data into cache\Cache Transform.Outputs[Cache Output]"
+                  name="Cache Output"
+                  synchronousInputId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load product data into cache\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Production].[Product]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load product data into cache\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      name="ProductID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
+                      length="25"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
+                      name="ProductNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
+                      name="ListPrice"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      dataType="i4"
+                      name="ProductID" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
+                      dataType="wstr"
+                      length="25"
+                      name="ProductNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MakeFlag]"
+                      dataType="bool"
+                      name="MakeFlag" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FinishedGoodsFlag]"
+                      dataType="bool"
+                      name="FinishedGoodsFlag" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Color]"
+                      dataType="wstr"
+                      length="15"
+                      name="Color" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SafetyStockLevel]"
+                      dataType="i2"
+                      name="SafetyStockLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReorderPoint]"
+                      dataType="i2"
+                      name="ReorderPoint" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StandardCost]"
+                      dataType="cy"
+                      name="StandardCost" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
+                      dataType="cy"
+                      name="ListPrice" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Size]"
+                      dataType="wstr"
+                      length="5"
+                      name="Size" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SizeUnitMeasureCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="SizeUnitMeasureCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[WeightUnitMeasureCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="WeightUnitMeasureCode" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Weight]"
+                      dataType="numeric"
+                      name="Weight"
+                      precision="8"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DaysToManufacture]"
+                      dataType="i4"
+                      name="DaysToManufacture" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductLine]"
+                      dataType="wstr"
+                      length="2"
+                      name="ProductLine" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Class]"
+                      dataType="wstr"
+                      length="2"
+                      name="Class" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Style]"
+                      dataType="wstr"
+                      length="2"
+                      name="Style" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductSubcategoryID]"
+                      dataType="i4"
+                      name="ProductSubcategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductModelID]"
+                      dataType="i4"
+                      name="ProductModelID" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellStartDate]"
+                      dataType="dbTimeStamp"
+                      name="SellStartDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellEndDate]"
+                      dataType="dbTimeStamp"
+                      name="SellEndDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DiscontinuedDate]"
+                      dataType="dbTimeStamp"
+                      name="DiscontinuedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
+                      dataType="guid"
+                      name="rowguid" />
+                    <externalMetadataColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="ModifiedDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      dataType="i4"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      name="ProductID" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
+                      dataType="wstr"
+                      length="25"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
+                      name="ProductNumber" />
+                    <outputColumn
+                      refId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
+                      dataType="cy"
+                      lineageId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
+                      name="ListPrice" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load product data into cache.Paths[OLE DB Source Output]"
+              endId="Package\Load product data into cache\Cache Transform.Inputs[Cache Input]"
+              name="OLE DB Source Output"
+              startId="Package\Load product data into cache\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1473,390 +1847,16 @@ where [refTable].[ProductID] = ?</property>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Loading data into cache"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{4F00E343-9374-4919-9F1E-78CF9B0C2203}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Loading data into cache"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Loading data into cache\Cache Transform"
-              componentClassID="Microsoft.Cache"
-              contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
-              name="Cache Transform"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Loading data into cache\Cache Transform.Connections[CacheConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Cache Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Cache Connection Manager]"
-                  description="The connection used to access the cache."
-                  name="CacheConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input]"
-                  hasSideEffects="true"
-                  name="Cache Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[ProductID]"
-                      cachedDataType="i4"
-                      cachedName="ProductID"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="The cache column associated with the input column."
-                          name="CacheColumnName">ProductID</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="Name"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="The cache column associated with the input column."
-                          name="CacheColumnName">Name</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[ProductNumber]"
-                      cachedDataType="wstr"
-                      cachedLength="25"
-                      cachedName="ProductNumber"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="The cache column associated with the input column."
-                          name="CacheColumnName">ProductNumber</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input].Columns[ListPrice]"
-                      cachedDataType="cy"
-                      cachedName="ListPrice"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="The cache column associated with the input column."
-                          name="CacheColumnName">ListPrice</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Loading data into cache\Cache Transform.Outputs[Cache Output]"
-                  name="Cache Output"
-                  synchronousInputId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input]">
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Loading data into cache\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[Production].[Product]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Loading data into cache\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IAVQBJD.AdventureWorks2014]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      name="ProductID"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      length="50"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
-                      length="25"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductNumber]"
-                      name="ProductNumber"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
-                      dataType="cy"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].Columns[ListPrice]"
-                      name="ListPrice"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      dataType="i4"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      name="Name" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductNumber]"
-                      dataType="wstr"
-                      length="25"
-                      name="ProductNumber" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MakeFlag]"
-                      dataType="bool"
-                      name="MakeFlag" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FinishedGoodsFlag]"
-                      dataType="bool"
-                      name="FinishedGoodsFlag" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Color]"
-                      dataType="wstr"
-                      length="15"
-                      name="Color" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SafetyStockLevel]"
-                      dataType="i2"
-                      name="SafetyStockLevel" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReorderPoint]"
-                      dataType="i2"
-                      name="ReorderPoint" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[StandardCost]"
-                      dataType="cy"
-                      name="StandardCost" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ListPrice]"
-                      dataType="cy"
-                      name="ListPrice" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Size]"
-                      dataType="wstr"
-                      length="5"
-                      name="Size" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SizeUnitMeasureCode]"
-                      dataType="wstr"
-                      length="3"
-                      name="SizeUnitMeasureCode" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[WeightUnitMeasureCode]"
-                      dataType="wstr"
-                      length="3"
-                      name="WeightUnitMeasureCode" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Weight]"
-                      dataType="numeric"
-                      name="Weight"
-                      precision="8"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DaysToManufacture]"
-                      dataType="i4"
-                      name="DaysToManufacture" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductLine]"
-                      dataType="wstr"
-                      length="2"
-                      name="ProductLine" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Class]"
-                      dataType="wstr"
-                      length="2"
-                      name="Class" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Style]"
-                      dataType="wstr"
-                      length="2"
-                      name="Style" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductSubcategoryID]"
-                      dataType="i4"
-                      name="ProductSubcategoryID" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductModelID]"
-                      dataType="i4"
-                      name="ProductModelID" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellStartDate]"
-                      dataType="dbTimeStamp"
-                      name="SellStartDate" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SellEndDate]"
-                      dataType="dbTimeStamp"
-                      name="SellEndDate" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DiscontinuedDate]"
-                      dataType="dbTimeStamp"
-                      name="DiscontinuedDate" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
-                      dataType="guid"
-                      name="rowguid" />
-                    <externalMetadataColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
-                      dataType="dbTimeStamp"
-                      name="ModifiedDate" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      dataType="i4"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      name="ProductID" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      dataType="wstr"
-                      length="50"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      name="Name" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
-                      dataType="wstr"
-                      length="25"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductNumber]"
-                      name="ProductNumber" />
-                    <outputColumn
-                      refId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
-                      dataType="cy"
-                      lineageId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ListPrice]"
-                      name="ListPrice" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Loading data into cache.Paths[OLE DB Source Output]"
-              endId="Package\Loading data into cache\Cache Transform.Inputs[Cache Input]"
-              name="OLE DB Source Output"
-              startId="Package\Loading data into cache\OLE DB Source.Outputs[OLE DB Source Output]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{AEF8B2EF-5D39-45E0-B4ED-DE6FB2B92F4B}"
-      DTS:From="Package\Loading data into cache"
+      DTS:From="Package\Load product data into cache"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Data flow task to join Product, SalesOrder and Product Review record" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
@@ -1864,7 +1864,7 @@ where [refTable].[ProductID] = ?</property>
       DTS:From="Package\Load product review into cache"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Data flow task to join Product, SalesOrder and Product Review record" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1879,27 +1879,39 @@ where [refTable].[ProductID] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
-          Id="Package\Data Flow Task"
+          Size="407,42"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record"
           TopLeft="156.474364512065,219.487886517983" />
         <NodeLayout
-          Size="191,42"
-          Id="Package\Loading data into cache"
+          Size="216,42"
+          Id="Package\Load product data into cache"
           TopLeft="129.961541926367,29.0393937060108" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="228.717953219216,71.0393937060108">
+          TopLeft="237.961541926367,71.0393937060108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,148.448492811972"
+              EndConnector="55.512822585698,148.448492811972"
               Start="0,0"
-              End="0,140.948492811972">
+              End="55.512822585698,140.948492811972">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,140.948492811972" />
+                    End="0,84.720318024189" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,84.720318024189"
+                    Point2="0,88.720318024189"
+                    Point3="4,88.720318024189" />
+                  <mssgle:LineSegment
+                    End="51.512822585698,88.720318024189" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.512822585698,88.720318024189"
+                    Point2="55.512822585698,88.720318024189"
+                    Point3="55.512822585698,92.720318024189" />
+                  <mssgle:LineSegment
+                    End="55.512822585698,140.948492811972" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1918,26 +1930,26 @@ where [refTable].[ProductID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-361.692302154602,55.987886517983"
+              EndConnector="-191.025635487935,55.987886517983"
               Start="0,0"
-              End="-361.692302154602,48.487886517983">
+              End="-191.025635487935,48.487886517983">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.2405145381996" />
+                    End="0,29.4611891524509" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,29.2405145381996"
-                    Point2="0,33.2405145381996"
-                    Point3="-4,33.2405145381996" />
+                    Point1="0,29.4611891524509"
+                    Point2="0,33.4611891524509"
+                    Point3="-4,33.4611891524509" />
                   <mssgle:LineSegment
-                    End="-357.692302154602,33.2405145381996" />
+                    End="-187.025635487935,33.4611891524509" />
                   <mssgle:CubicBezierSegment
-                    Point1="-357.692302154602,33.2405145381996"
-                    Point2="-361.692302154602,33.2405145381996"
-                    Point3="-361.692302154602,37.2405145381996" />
+                    Point1="-187.025635487935,33.4611891524509"
+                    Point2="-191.025635487935,33.4611891524509"
+                    Point3="-191.025635487935,37.4611891524509" />
                   <mssgle:LineSegment
-                    End="-361.692302154602,48.487886517983" />
+                    End="-191.025635487935,48.487886517983" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1950,40 +1962,52 @@ where [refTable].[ProductID] = ?</property>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Data flow task to join Product, SalesOrder and Product Review record">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Data Flow Task\OLE DB Source"
+          Size="204,42"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source"
           TopLeft="26.3974366639493,5.5" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Data Flow Task\sort product details"
+          Size="167,42"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record\sorty by ProductID"
           TopLeft="42.4230782774074,263.530312351397" />
         <NodeLayout
-          Size="113,42"
-          Id="Package\Data Flow Task\Lookup"
+          Size="202,42"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details"
           TopLeft="40.499991380251,94.8131247859937" />
         <NodeLayout
-          Size="154,42"
-          Id="Package\Data Flow Task\Derived Column"
+          Size="252,42"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record\Replace comma from Name proeprty"
           TopLeft="35.7563970610935,184.873729765068" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="99.0487140221001,47.1">
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[OLE DB Source Output]"
+          TopLeft="128.397436663949,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.7131247859937"
+              EndConnector="13.1025547163017,47.3131247859937"
               Start="0,0"
-              End="0,40.2131247859937">
+              End="13.1025547163017,39.8131247859937">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.2131247859937" />
+                    End="0,19.6565623929968" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.6565623929968"
+                    Point2="0,23.6565623929968"
+                    Point3="4,23.6565623929968" />
+                  <mssgle:LineSegment
+                    End="9.10255471630171,23.6565623929968" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.10255471630171,23.6565623929968"
+                    Point2="13.1025547163017,23.6565623929968"
+                    Point3="13.1025547163017,27.6565623929968" />
+                  <mssgle:LineSegment
+                    End="13.1025547163017,39.8131247859937" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1993,50 +2017,50 @@ where [refTable].[ProductID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="96.899991380251,136.413124785994">
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Lookup Match Output]"
+          TopLeft="141.499991380251,136.813124785994">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="15.6564056808425,48.4606049790745"
+              EndConnector="20.2564056808425,48.0606049790743"
               Start="0,0"
-              End="15.6564056808425,40.9606049790745">
+              End="20.2564056808425,40.5606049790743">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2303024895373" />
+                    End="0,20.0303024895371" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2303024895373"
-                    Point2="0,24.2303024895373"
-                    Point3="4,24.2303024895373" />
+                    Point1="0,20.0303024895371"
+                    Point2="0,24.0303024895371"
+                    Point3="4,24.0303024895371" />
                   <mssgle:LineSegment
-                    End="11.6564056808425,24.2303024895373" />
+                    End="16.2564056808425,24.0303024895371" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.6564056808425,24.2303024895373"
-                    Point2="15.6564056808425,24.2303024895373"
-                    Point3="15.6564056808425,28.2303024895373" />
+                    Point1="16.2564056808425,24.0303024895371"
+                    Point2="20.2564056808425,24.0303024895371"
+                    Point3="20.2564056808425,28.0303024895371" />
                   <mssgle:LineSegment
-                    End="15.6564056808425,40.9606049790745" />
+                    End="20.2564056808425,40.5606049790743" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-40.3631838783288,29.2303024895373,96.3827734375,11.609375"
+              BoundingBox="-38.0631838783288,29.0303024895371,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="112.756397061094,226.873729765068">
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Derived Column Output]"
+          TopLeft="161.756397061094,226.873729765068">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.6666812163139,36.656582586329"
+              EndConnector="-35.8333187836861,36.656582586329"
               Start="0,0"
-              End="14.6666812163139,29.156582586329">
+              End="-35.8333187836861,29.156582586329">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2045,15 +2069,15 @@ where [refTable].[ProductID] = ?</property>
                   <mssgle:CubicBezierSegment
                     Point1="0,14.3282912931645"
                     Point2="0,18.3282912931645"
-                    Point3="4,18.3282912931645" />
+                    Point3="-4,18.3282912931645" />
                   <mssgle:LineSegment
-                    End="10.6666812163139,18.3282912931645" />
+                    End="-31.8333187836861,18.3282912931645" />
                   <mssgle:CubicBezierSegment
-                    Point1="10.6666812163139,18.3282912931645"
-                    Point2="14.6666812163139,18.3282912931645"
-                    Point3="14.6666812163139,22.3282912931645" />
+                    Point1="-31.8333187836861,18.3282912931645"
+                    Point2="-35.8333187836861,18.3282912931645"
+                    Point3="-35.8333187836861,22.3282912931645" />
                   <mssgle:LineSegment
-                    End="14.6666812163139,29.156582586329" />
+                    End="-35.8333187836861,29.156582586329" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2063,18 +2087,18 @@ where [refTable].[ProductID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="122,42"
-          Id="Package\Data Flow Task\Lookup 1"
+          Size="186,42"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review"
           TopLeft="123.5,375.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="127.423078277407,305.530312351397">
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Sort Output]"
+          TopLeft="125.923078277407,305.530312351397">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.0769217225926,69.969687648603"
+              EndConnector="90.5769217225926,69.969687648603"
               Start="0,0"
-              End="57.0769217225926,62.469687648603">
+              End="90.5769217225926,62.469687648603">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2085,13 +2109,13 @@ where [refTable].[ProductID] = ?</property>
                     Point2="0,34.9848438243015"
                     Point3="4,34.9848438243015" />
                   <mssgle:LineSegment
-                    End="53.0769217225926,34.9848438243015" />
+                    End="86.5769217225926,34.9848438243015" />
                   <mssgle:CubicBezierSegment
-                    Point1="53.0769217225926,34.9848438243015"
-                    Point2="57.0769217225926,34.9848438243015"
-                    Point3="57.0769217225926,38.9848438243015" />
+                    Point1="86.5769217225926,34.9848438243015"
+                    Point2="90.5769217225926,34.9848438243015"
+                    Point3="90.5769217225926,38.9848438243015" />
                   <mssgle:LineSegment
-                    End="57.0769217225926,62.469687648603" />
+                    End="90.5769217225926,62.469687648603" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2102,29 +2126,41 @@ where [refTable].[ProductID] = ?</property>
         </EdgeLayout>
         <NodeLayout
           Size="172,42"
-          Id="Package\Data Flow Task\Flat File Destination"
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record\Flat File Destination"
           TopLeft="102.5,525.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
-          TopLeft="186.5,417.5">
+          Id="Package\Data flow task to join Product, SalesOrder and Product Review record.Paths[Lookup Match Output1]"
+          TopLeft="216.5,417.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,108"
+              EndConnector="-28,108"
               Start="0,0"
-              End="0,100.5">
+              End="-28,100.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,100.5" />
+                    End="0,50" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50"
+                    Point2="0,54"
+                    Point3="-4,54" />
+                  <mssgle:LineSegment
+                    End="-24,54" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24,54"
+                    Point2="-28,54"
+                    Point3="-28,58" />
+                  <mssgle:LineSegment
+                    End="-28,100.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,44.4453125,96.3827734375,11.609375"
+              BoundingBox="-62.19138671875,59,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2132,7 +2168,7 @@ where [refTable].[ProductID] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data flow task to join Product, SalesOrder and Product Review record\Sales Order Details Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2145,7 +2181,7 @@ where [refTable].[ProductID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup">
+    design-time-name="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup sales order details">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -2155,20 +2191,20 @@ where [refTable].[ProductID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Loading data into cache">
+    design-time-name="Package\Load product data into cache">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158.4,41.6"
-          Id="Package\Loading data into cache\Cache Transform"
+          Id="Package\Load product data into cache\Cache Transform"
           TopLeft="247.6,190.8" />
         <NodeLayout
           Size="149.6,41.6"
-          Id="Package\Loading data into cache\OLE DB Source"
+          Id="Package\Load product data into cache\OLE DB Source"
           TopLeft="246.7,50.3" />
         <EdgeLayout
-          Id="Package\Loading data into cache.Paths[OLE DB Source Output]"
+          Id="Package\Load product data into cache.Paths[OLE DB Source Output]"
           TopLeft="324.15,91.9">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2195,7 +2231,7 @@ where [refTable].[ProductID] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Loading data into cache\OLE DB Source">
+    design-time-name="Package\Load product data into cache\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2271,7 +2307,7 @@ where [refTable].[ProductID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup 1">
+    design-time-name="Package\Data flow task to join Product, SalesOrder and Product Review record\Lookup product review">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
